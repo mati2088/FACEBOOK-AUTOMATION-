@@ -10,12 +10,16 @@ public class BaseTest {
 
     protected static WebDriver driver;
 
+
+    //RUN
+    //Clean AllTest -Dwebdriver.chrome.driver="D:\AppDemo\src\test\resources\driver\chromedriver.exe" --project-prop includeTags="Test"
+
     @Before
     public void init(){
         driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        driver.get("https://www.facebook.com/");
+        driver.get("url");
     }
 
     public static WebDriver getDriver(){

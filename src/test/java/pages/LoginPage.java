@@ -5,11 +5,11 @@ import parallel.elements.WebElementParallel;
 
 public class LoginPage {
 
-    private String titulo = "//input[@type='text']";
-    private String campoPassword = "//div[@id='passContainer']";
-    private String CampoUsuario = "//input[@type='text']";
+    private String titulo = "";
+    private String campoPassword = "";
+    private String CampoUsuario = "";
 
-    private String botonIniciarSesion = "//button[contains(text(),'Iniciar sesión')]";
+    private String botonIniciarSesion = "";
 
     public WebElementParallel getTitulo(){return new WebElementParallel(By.xpath(titulo));}
 
